@@ -1,5 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Nav from './components/Nav';
+import Home from './components/Home';
+import About from './components/About';
+import Menu from './components/Menu';
+import Reservations from './components/Reservations';
+import OrderOnline from './components/OrderOnline';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -10,6 +18,16 @@ function App() {
         className="App-logo"
         alt="logo"
       />
+      <BrowserRouter>
+      <Nav />
+
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
+    </BrowserRouter>
       <nav/>
       <ul>
         <li>Home</li>

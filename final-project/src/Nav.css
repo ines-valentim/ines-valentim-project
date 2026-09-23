@@ -1,0 +1,52 @@
+.navbar {
+  background-color: var(--white);
+  padding: 20px 5%;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Markazi Text", serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: var(--black);
+
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-green);
+}
+
+.nav-links li:last-child a {
+  background-color: var(--yellow);
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.nav-links li:last-child a:hover {
+  background-color: #e5bc0d;
+  color: var(--black);
+}

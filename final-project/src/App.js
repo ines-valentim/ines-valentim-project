@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Nav from './components/Nav';
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header"/>
       <img
-        src={logo.jpg}
+        src={Logo.jpg}
         className="App-logo"
         alt="logo"
       />
@@ -22,10 +22,12 @@ function App() {
       <Nav />
 
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/menu" element={<MenuPage />} />
-        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/menu" element={<Menu/>} />
+        <Route path="/booking" element={<Reservations/>} />
+        <Route path="/order-online" element={<OrderOnline/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </BrowserRouter>
       <nav/>

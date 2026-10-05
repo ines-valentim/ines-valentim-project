@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header"/>
       <img
-        src={Logo.jpg}
+        src={'/Logo.jpg'}
         className="App-logo"
         alt="logo"
       />

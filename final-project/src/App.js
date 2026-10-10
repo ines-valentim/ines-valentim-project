@@ -8,8 +8,6 @@ import Menu from './components/Menu';
 import Reservations from './components/Reservations';
 import OrderOnline from './components/OrderOnline';
 import Login from './components/Login';
-import { render } from 'testing-library/react';
-import BookingForm from './components/BookingForm';
 
 function App() {
   return (
@@ -44,7 +42,6 @@ function App() {
       <main/>
       <footer/>
       <ul>
-        <li><img></img></li>
         <li>Doormat</li>
         <li> Contact </li>
         <li>Social Media Links</li>
@@ -55,6 +52,4 @@ function App() {
 
 export default App;
 
-test('renders booking form', () => {
-  render(<BookingForm />);
-});
+

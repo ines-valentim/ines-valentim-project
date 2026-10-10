@@ -3,6 +3,8 @@ import {Routes, Route} from "react-router-dom";
 import BookingForm from "./BookingForm";
 import ConfirmedBooking from "./ConfirmBooking";
 import { fetchData, submitAPI } from "./api";
+import { render } from 'testing-library/react';
+import BookingForm from './components/BookingForm';
 
 const initializeTimes = () => {
     const today = new Date();
@@ -52,3 +54,7 @@ function Main() {
 }
 
 export default Main;
+
+test('renders booking form', () => {
+  render(<BookingForm />);
+});
